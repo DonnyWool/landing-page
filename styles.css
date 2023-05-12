@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
 }
 
 .header, .section-one, .footer {
@@ -13,6 +14,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items : baseline;
+    top: 0;
 }
 
 .header-logo {
@@ -38,7 +40,9 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 25%;
+    width: 450px;
+    height: 400px;
+    background-size: contain;
 }
 
 .section-one {
@@ -46,6 +50,11 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 75px;
+}
+
+.card {
+    margin-right: 50px;
 }
 
 
@@ -58,12 +67,47 @@ body {
 .intro-caption {
     color: #e5e7eb;
     font-size: 18px;
+    height:100px;
+    width: 500px;
+    overflow: scroll;
+}
+
+.intro-button {
+    margin-top: 10px;
 }
 
 .info-card {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1 1 25%;
+}
+
+.info-texts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px;
+    gap: 16px;
+}
+
+.info-text {
+    border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+  width: 300px;
+  height: 300px;
+  overflow: scroll;
+}
+
+.section-images {
+    display: flex;
+    justify-content: center;
+
 }
 
 .section-two-header {
@@ -76,7 +120,20 @@ body {
     margin: 30px;
 }
 
+.Car {
+    float: none;
+    border: 4px solid #3971d2;
+    width:  250px;
+    height: 300px;
+    background-size: cover;
+    border-radius: 12px;
+}
+
 .section-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #e5e7eb;
     color: #1f2937;
     font-weight: lighter;
@@ -84,26 +141,41 @@ body {
 }
 
 .section-four {
-    display: flex;
     margin: 75px auto;
 }
 
+.promo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+}
 
-.promo-button {
+.promo-intro {
+    font-weight: bolder;
+}
+
+.promo-clicker {
+    display: flex;
+    justify-content: center;
+    align-self: center;
     border-radius: 6px;
     border-color: white;
+    float: right;
 }
 
 .bubble {
     background-color: #3882f6;
     color: #f9faf8;
-    padding: 50px;
+    padding: 50px 50px 100px 50px;
     border-radius: 6px;
+    width: 900px;
 }
 
 button {
     background-color: #3882f6;
     color: #f9faf8;
+    padding: 5px 20px 5px 20px;
 }
 
 .footer {
@@ -113,6 +185,9 @@ button {
     color: #e5e7eb;
     margin-top: auto;
     height: 72px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 
 img {
